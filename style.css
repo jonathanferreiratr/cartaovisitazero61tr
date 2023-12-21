@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  
+  font-family: 'Muli', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  /* overflow: hidden; */
+  /* margin: 0; */
+  background-image: url('imagem-fundo3.1.svg');
+  max-width:100vw;
+  flex-wrap: wrap;
+  
+}
+
+.container {
+  display:flex;
+  max-width:100%;
+  flex-wrap: wrap;
+}
+.text{
+  padding: 0.60em;
+  filter: brightness(175%);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-shadow:
+  1px 3px 2px black,
+  0 0 1em blue,
+  0 0 0.2em blue;
+color: white;
+font:
+  1.5em Georgia,
+  "Bitstream Charter",
+  "URW Bookman L",
+  "Century Schoolbook L",
+  serif
+  
+}
+
+.panel {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 70vh;
+  border-radius: 50px;
+  color: #fff;
+  cursor: pointer;
+  flex: 0.5;
+  margin: 10px;
+  position: relative;
+  -webkit-transition: all 700ms ease-in;
+}
+.lista{
+  list-style: none;
+}
+
+
+.panel h3 {
+  /* font-size: 24px; */
+  position: static;
+  bottom: 20rem;
+  left: 20px;
+  /* margin: 0; */
+  opacity: 0;
+
+  text-shadow:
+    1px 1px 2px black,
+    0 0 1em blue,
+    0 0 0.2em blue;
+  color: white;
+  font:
+    1.5em Georgia,
+    "Bitstream Charter",
+    "URW Bookman L",
+    "Century Schoolbook L",
+    serif;
+}
+.box-2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+  .panel.active {
+    flex: 5;
+  }
+  
+
+  .panel.active h3 {
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+  }
+
+
+
+  @media (max-width: 1200px) {
+    .container {
+      width: 100rem;
+      grid-template-columns: 1fr ;
+    }
+    .paniel h3{
+      font: 0.7em;
+
+    }
+    .panel:nth-of-type(5),
+    .panel:nth-of-type(5) {
+      display: flex;
+    }
+
+  }
+
+  @media (max-width: 1024px) {
+    .container {
+      width: 70rem;
+      grid-template-columns: 1fr ;
+    }
+    .paniel h3{
+      font: 0.7em;
+
+    }
+    .panel:nth-of-type(5),
+    .panel:nth-of-type(5) {
+      display: flex;
+    }
+
+  }
+  @media (max-width: 768px) {
+    .container {
+      width: 40rem;
+      grid-template-columns: 1fr ;
+    }
+    .paniel h3{
+      font: 0.7em;
+
+    }
+    .panel:nth-of-type(5),
+    .panel:nth-of-type(5) {
+      display: flex;
+    }
+
+  }
+  @media (max-width: 425px) {
+    .container {
+      width: 32rem;
+      grid-template-columns: 1fr ;
+    }
+    .paniel h3{
+      font: 0.7em;
+
+    }
+    .panel:nth-of-type(5),
+    .panel:nth-of-type(5) {
+      display: flex;
+    }
+
+  }
+  @media (max-width: 1031px) {
+    .container {
+      width: 68rem;
+      grid-template-columns: 1fr ;
+    }
+    .paniel h3{
+      font: 0.7em;
+
+    }
+    .panel:nth-of-type(5),
+    .panel:nth-of-type(5) {
+      display: flex;
+    }
+
+  }
+
+.header {
+  color: #030303;
+  text-align: center;
+  text-transform: capitalize;
+
+  text-shadow:
+    1px 1px 2px black,
+    0 0 1em blue,
+    0 0 0.2em blue;
+  color: white;
+  font:
+    1.5em Georgia,
+    "Bitstream Charter",
+    "URW Bookman L",
+    "Century Schoolbook L",
+    serif;
+  
+}
+
+/*botão whatsap*/
+#div-fixa{
+  position: fixed;
+  bottom: 20px;
+  margin: 0 30px;
+  background: rgb(28, 207, 37);
+  width: 230px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.5s all;
+  right: 40px ;
+}
+#div-fixa.shrink {
+  width: 50px;
+  transition: 0.5s all;
+  overflow: hidden;
+}
+
+#div-fixa img {
+  width: 50px;
+  height: 50px;
+}
+#div-fixa a .flex-itens {
+  display: flex;
+  align-items: center;
+}
+#div-fixa a .flex-itens span{
+  display: block;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: black;
+  margin-left: 10px;
+  font-size: 17px;
+  min-width: 165px;
+  opacity: 0;
+  
+}
+#div-fixa a .flex-itens span.aparecer{
+  transition: 0.5s all;
+  opacity: 1;
+}
+.flutuar{
+  animation-name: flutuar;
+  animation-duration: 0.7s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes flutuar{
+  from {
+    transform: translate3d(0, 0, 0);
+    filter: brightness(100%);
+  }
+  to {
+    transform: translate3d(0, -15px, 0);
+    filter: brightness(110%);
+  }
+}
