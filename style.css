@@ -105,6 +105,7 @@ font:
     }
     .paniel h3{
       font: 0.7em;
+      width: 100rem;
 
     }
     .panel:nth-of-type(5),
@@ -121,12 +122,14 @@ font:
     }
     .paniel h3{
       font: 0.7em;
+      width: 70rem;
 
     }
     .panel:nth-of-type(5),
     .panel:nth-of-type(5) {
       display: flex;
     }
+    
 
   }
   @media (max-width: 768px) {
@@ -136,6 +139,7 @@ font:
     }
     .paniel h3{
       font: 0.7em;
+      width: 40rem;
 
     }
     .panel:nth-of-type(5),
@@ -151,6 +155,7 @@ font:
     }
     .paniel h3{
       font: 0.7em;
+      width: 32rem;
 
     }
     .panel:nth-of-type(5),
@@ -166,6 +171,7 @@ font:
     }
     .paniel h3{
       font: 0.7em;
+      width: 62rem;
 
     }
     .panel:nth-of-type(5),
